@@ -206,7 +206,7 @@
     padding: 64px 5% 80px;
     display: grid;
     grid-template-columns: 1.05fr 1fr;
-    gap: 64px;
+    gap: 36px;
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -278,17 +278,15 @@
   /* Hero visual — What We Offer card */
   .hero-visual {
     position: relative;
-    max-width: 480px;
-    margin-left: auto;
     width: 100%;
   }
   .hero-visual::before {
     content: '';
     position: absolute;
-    inset: -60px -60px -40px -30px;
+    inset: -44px 0 -44px 0;
     background:
       linear-gradient(135deg, rgba(255,176,115,0.35) 0%, rgba(255,225,200,0.55) 45%, rgba(217,84,11,0.35) 100%),
-      url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      url('assets/store-1.jpg') center/cover no-repeat;
     border-radius: 36px;
     z-index: 0;
     box-shadow: 0 30px 60px -30px rgba(27,19,10,0.18);
@@ -307,6 +305,8 @@
   .offer-card {
     position: relative;
     z-index: 1;
+    max-width: 460px;
+    margin: 0 auto;
     background: var(--paper);
     border: 1px solid var(--line);
     border-radius: 24px;
@@ -644,11 +644,11 @@
     position: absolute; inset: 0;
     background:
       linear-gradient(160deg, rgba(242,107,29,0.82) 0%, rgba(156,58,6,0.9) 100%),
-      url('https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;
+      url('assets/store-2.jpg') center/cover no-repeat;
     border-radius: var(--rad-xl);
     overflow: hidden;
-    display: flex; flex-direction: column; justify-content: flex-end;
-    padding: 36px 36px 80px;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 44px 36px;
     color: #fff;
     box-shadow: var(--shadow-card);
   }
